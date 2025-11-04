@@ -400,3 +400,5 @@ class UKAN(nn.Module):
         out = F.relu(F.interpolate(self.decoder5(out),scale_factor=(2,2),mode ='bilinear'))
 
         return self.final(out)
+# ---- registry / export names ----
+__all__ = ["UKAN"]
